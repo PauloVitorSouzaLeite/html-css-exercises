@@ -1,0 +1,97 @@
+@charset "UTF-8";
+:root {
+    --color1: #C4E4FF;
+    --color2: #265D8C;
+    --color3: #267D8C; 
+    --color4: #263C8C;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--color2);
+}
+header h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+}
+header h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px 0 0 0;
+    font-size: 2.4em;
+}
+header h2:hover {
+    text-decoration: underline;
+}
+header h1, header h2 {
+    color: white;
+    text-align: center;
+}
+label {
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+form {
+    background-color: white;
+    width: 500px;
+    padding: 15px 20px 4px 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.507);
+}
+input {
+   padding: 4px 20px;
+   margin: 10px 0;
+   width: 300px;
+   border-radius: 13px;
+   transition: 1s;
+}
+input:focus {
+    transform: scale(1, 1.2);
+}
+#btn {
+    text-align: center;
+}
+#btn button:nth-child(1) {
+    background-color: red;
+}
+#btn button:nth-child(1):hover {
+    background-color: darkred;
+}
+#btn button:nth-child(2) {
+    background-color: green;
+}
+#btn button:nth-child(2):hover {
+    background-color: darkgreen;
+}
+span a {
+    font-variant: small-caps;
+    font-weight: 100;
+    display: block;
+    color: darkblue;
+    padding: 5px ;
+    text-underline-offset: 7px;
+    transition: 0.7s;
+}
+span a:hover {
+    color: darkred;
+}
+button {
+    font-variant: small-caps;
+    color: white;
+    padding: 5px 20px;
+    margin: 30px 30px 10px 30px;
+    text-align: center;
+    transition: 1s;
+    border-radius: 1em;
+    font-size: 1em;
+    border: none;
+}
+button:hover {
+    transform: translate(0%,-20%) scale(1.150);
+    transform-origin: center center;
+    box-shadow: 3px 4px 2px 1px rgba(0, 0, 0, 0.466);
+}

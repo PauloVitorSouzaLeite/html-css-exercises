@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/portrait.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilos/landscape.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="estilos/all.css" media="all">
+</head>
+<body>
+    <header>
+        <h1>Faça login em sua conta!</h1>
+    </header>
+    <main>
+        <form action="" method="post" autocomplete="on">
+            <div>
+                <label for="inome" class="info">Nome</label>
+                <input type="text" name="usuario" id="inome" required autocomplete="name" minlength="3"  maxlength="60">
+            </div>
+            <div>
+                <label for="iemail" class="info">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" maxlength="60">
+            </div>
+            <div>
+                <label for="isenha" class="info">Senha</label>
+                <input type="password" name="senha" id="isenha" required autocomplete="current-password" minlength="8" maxlength="24">
+            </div>
+            <div>
+                <input type="checkbox" name="escolha" id="alt2" value="criar">
+                <label for="alt2" id="esc">Criar conta</label>
+            </div>
+            <div>
+                <img src="imagem1.png" alt="" id="dentro">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
