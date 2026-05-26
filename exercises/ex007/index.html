@@ -3,30 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>7° Exercício</title>
+    <style>
+        .container {
+            height: 100vh;
+            background-color: dimgrey;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            width: 200px; height: 200px;
+            background-color: white;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <section>
-            <form action="" method="get" class="container">
-                <div class="item">
-                    <label for="idnome">Nome: </label>
-                    <input type="text" name="nome" id="idnome">
-                </div>
-                <div class="item">
-                    <label for="idsobre">Sobrenome: </label>
-                    <input type="text" name="sobrenome" id="idsobre">
-                </div>
-                <div class="item">
-                    <label for="idemail">Email: </label>
-                    <input type="email" name="email" id="idemail">
-                </div>
-                <div class="item">
-                    <button type="button">Enviar</button>
-                </div>
-            </form>
-        </section>
+    <main class="container">
+        <div class="item"></div>
     </main>
 </body>
 </html>

@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em 0;
+}
+.item {
+    width: 300px; height: 120px;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    border-radius: 1em;
+}
