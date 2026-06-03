@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --c1: #305048;
+    --c2: #755B34;
+    --c3: #086A97;
+    --c4: #4F5B42;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--c2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item p {
+    margin: 0 15px;
+    text-align: justify;
+    hyphens: auto;
+    letter-spacing: 1px;
+    text-indent: 1em;
+    color: white;
+    line-height: 22px;
+    font-weight: 600;
+}
+.item h1 {
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+}
+.container {
+    width: 350px;
+    border: 4px solid black;
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: var(--c4);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 1.54em;
+    transition: width 300ms ease, height 200ms ease;
+}
+.list {
+    list-style-type: square;
+    list-style-position: inside;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    color: white;
+    font-weight: 500;
+}
+.list li {
+    padding: 4px 3px;
+    border-bottom: 2px solid black;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.322);
+}
+#inf {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#inf h2 {
+    letter-spacing: 2px;
+    color: white;
+}
+#button {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#button button {
+    background-color: var(--c1);
+    color: white;
+    flex-basis: 70%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 1em;
+    height: 35px;
+    transition: border 0.3s ease, transform 0.7s ease, background-color 1s ease;
+}
+#button button:hover {
+    background-color: #263f39;
+    transform: translateY(-10%);
+}
+#imgs {
+    border-radius: 0 0 25% 0;
+    box-shadow: 0 6px 2px 2px rgba(0, 0, 0, 0.700);
+    width: 100%;
+    height: 300px;
+    background: black url("imagem/paisagem.jpg") center right no-repeat;
+    background-size: cover;
+    transition: width 200ms ease, border-radius 400ms ease;
+}

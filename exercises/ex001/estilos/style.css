@@ -1,0 +1,113 @@
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        width: 500px;
+        box-shadow: 5px 5px 2px 5px rgba(0, 0, 0, 0.493);
+    }
+    #inf {
+        height: 150px;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    #inf h2 {
+        letter-spacing: 2px;
+        font-size: 2.1rem;
+        margin-bottom: 11px;
+        text-shadow: 4px 2px 2px black;
+    }
+    #button {
+        min-height: 100%;
+        margin-top: 10px;
+    }
+    #button button {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        height: 50px;
+        flex: 0 0 80%;
+    }
+    #imgs {
+        border-radius: 0 0 0 30%;
+    }
+    .item h1 {
+        font-size: 2.1rem;
+        text-shadow: 4px 2px 2px black;
+    }
+    .item p {
+        font-size: 1.1rem;
+        line-height: 27px;
+        letter-spacing: 2px;
+        padding: 0 0 2em 0;
+        border-bottom: 4px solid black;
+        box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.500);
+    }
+    .list {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-evenly;
+        gap: 1em;
+    }
+    .list li {
+        margin: 0 8px;
+        padding: 3px 5px;
+        font-size: 1.235rem;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+    .list #l3 {
+        flex: 0 0 325px;
+    }
+}
+@media screen and (min-width: 993px) {
+    .container {
+        width: 900px;
+        box-shadow: 5px 5px 2px 5px rgba(0, 0, 0, 0.493);
+        gap: 1.4em;
+    }
+    .item h1 {
+        letter-spacing: 5px;
+        font-size: 2.544rem;
+        text-shadow: 4px 2px 2px black;
+    }
+    .item p {
+        font-size: 1.170rem;
+        line-height: 28px;
+        letter-spacing: 2px;
+        padding: 0 0 2em 0;
+        border-bottom: 4px solid black;
+        box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.500);
+    }
+    .list {
+        display: flex;
+        font-size: 1.2rem;
+        gap: 1em;
+    }
+    .list li {
+        letter-spacing: 3px;
+        padding: 4px 15px;
+        font-weight: 600;
+    }
+    #inf {
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #inf h2 {
+        letter-spacing: 5px;
+        font-size: 2.54rem;
+        font-weight: 900;
+        margin-bottom: 11px;
+        text-shadow: 4px 2px 2px black;
+    }
+    #button button {
+        letter-spacing: 3px;
+        font-size: 1.9rem;
+        flex: 0 0 60%;
+        height: 60px;
+    }
+    #imgs {
+        border-radius: 0 0 35% 0;
+    }
+}

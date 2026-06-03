@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1° Exercício</title>
-    <style>
-        .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .item {
-            background-color: orange;
-            border: 2px solid black;
-            width: 100px;
-            border-radius: 10px;
-            text-align: center;
-            margin: 0 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Perfil pessoal</title>
 </head>
 <body>
-    <main class="container">
-        <div class="item">Bloco 1</div>
-        <div class="item">Bloco 2</div>
-        <div class="item">Bloco 3</div>
+    <main>
+        <div class="container">
+            <div class="item" id="imgs">
+            </div>
+            <div class="item">
+                <h1>Paulo Vitor</h1>
+            </div>
+            <div class="item">
+                <p>Olá, me chamo Paulo Vitor, tenho 15 anos. Estudo programação, especificadamente na área de desenvolvimento web. Com prática e organização, conquistarei uma vaga como web developer</p>
+            </div>
+            <div class="item" id="inf">
+                <h2>Hobbies</h2>
+                <ul class="list">
+                    <li>Caminhar</li>
+                    <li>Correr</li>
+                    <li>Programar/Desenvolver</li>
+                </ul>
+            </div>
+            <div class="item" id="button">
+                <button type="button">Seguir</button>
+            </div>
+        </div>
     </main>
 </body>
 </html>
