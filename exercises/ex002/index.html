@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2° Exercício</title>
-    <style>
-        .container {
-            height: 50vh;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-        .item {
-            border: 2px solid black;
-            color: white;
-        }
-        #div1 {background-color: red ; height: 50px;}
-        #div2 {background-color: darkblue; height: 70px;}
-        #div3 {background-color: green; height: 30px;}
-    </style>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <main>
-        <section class="container">
-            <div class="item" id="div1">Bloco 1</div>
-            <div class="item" id="div2">Bloco 2</div>
-            <div class="item" id="div3">Bloco 3</div>
+    <header class="header-container">
+        <h1>Site de notícias</h1>
+        <h2>Incluindo notícias exclusivas</h2>
+    </header>
+    <main class="main-container">
+        <section class="section-container">
+            <article>
+                <h2>Albert Einsten</h2>
+                <p>O físico Albert Einstein é popularmente conhecido por sua grande contribuição para a ciência, como com a descoberta da teoria da relatividade. No entanto, outros assuntos também interessavam o cientista. De acordo com o portal Psychology Today, Einstein buscava entender a felicidade e solucionar o que constitui uma vida verdadeiramente feliz. Em suas reflexões, chegou a desenvolver uma frase, como uma espécie de fórmula, que sanava as suas dúvidas. Entenda mais!.</p>
+                <footer>
+                    <p>Por <a href="https://www.msn.com/pt-br/estilo-de-vida/lifestylegeneral/albert-einstein-disse-que-o-segredo-da-felicidade-est%C3%A1-em-viver-a-vida-inspirada-nessas-palavras/ar-AA1XFyCb?ocid=msedgntp&pc=SCOODB&cvid=6a23911f57bd49c8a282fcd061502b96&ei=9" target="_blank" rel="noopener">msn.com</a></p>
+                </footer>
+            </article>
+            <aside>
+                <h2>Estimativa de QI</h2>
+                <p>Especialistas que tentaram estimar o QI de Einstein sugerem valores entre 160 e 180, colocando-o no topo da escala de inteligência. Para efeito de comparação, outros indivíduos famosos com QIs elevados incluem Bill Gates (162) e Steve Jobs (140), mostrando que Einstein estaria entre os mais inteligentes da história moderna.</p>
+            </aside>
         </section>
     </main>
 </body>
