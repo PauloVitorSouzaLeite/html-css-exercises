@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" media="all">
-    <link rel="stylesheet" href="estilos/style.css">
-    <title>Perfil pessoal</title>
+    <title>3° Exercício</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        div {
+            border-radius: 0 10px 10px 0;
+            border: 2px solid white;
+            background-color: red;
+            height: 30px;
+        }
+        #d1 {width: 50px;}
+        #d2 {width: 180px;}
+        #d3 {width: 130px;}
+    </style>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div class="item" id="imgs">
-            </div>
-            <div class="item">
-                <h1>Paulo Vitor</h1>
-            </div>
-            <div class="item">
-                <p>Olá, me chamo Paulo Vitor, tenho 15 anos. Estudo programação, especificadamente na área de desenvolvimento web. Com prática e organização, conquistarei uma vaga como web developer</p>
-            </div>
-            <div class="item" id="inf">
-                <h2>Hobbies</h2>
-                <ul class="list">
-                    <li>Caminhar</li>
-                    <li>Correr</li>
-                    <li>Programar/Desenvolver</li>
-                </ul>
-            </div>
-            <div class="item" id="button">
-                <button type="button">Seguir</button>
-            </div>
-        </div>
+    <main class="container">
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
     </main>
 </body>
 </html>

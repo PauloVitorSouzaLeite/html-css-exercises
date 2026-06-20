@@ -93,6 +93,121 @@ footer a {
     padding: 3px 5px;
     text-underline-offset: 5px;
 }
-footer a:hover {
-    text-decoration: underline;
+footer a:hover {text-decoration: underline;}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .header-container {text-shadow: 3px 2px 1px black;}
+    .header-container h1 {
+        border-bottom: 6px solid black;
+        font-size: 3rem;}
+    .header-container h2 {font-size: 2rem;}
+    .main-container {align-items: center;}
+    .section-container {
+        min-height: 500px;
+        flex-flow: row nowrap;
+        gap: 2em;
+    }
+    article, aside {
+        align-self: flex-start;
+        box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.507);
+        flex: 1 1 200px;
+    }
+    article p, aside p {font-size: 1.220rem;}
+    article h2, aside h2 {
+        font-size: 1.750rem;
+        box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    }
+    aside {background-image: linear-gradient(to bottom, #4B8C6E, lightslategrey);}
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        width: 100vw;
+        justify-content: center;
+        gap: 3em;
+    }
+    .header-container {
+        align-items: center;
+        text-shadow: 3px 2px 1px black;
+    }
+    .header-container h1 {
+        font-size: 3.4rem;
+        margin-bottom: 20px;
+    }
+    .header-container h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    .main-container {align-items: center;}
+    .section-container {
+        min-height: 500px;
+        flex-flow: row nowrap;
+        gap: 2em;
+    }
+    article, aside {
+        align-self: flex-start;
+        box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.507);
+        flex: 1 1 400px;
+        transition: transform 600ms ease;
+    }
+    article p, aside p {font-size: 1.220rem;}
+    article h2, aside h2 {
+        font-size: 1.750rem;
+        box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    }
+    aside {
+        background-image: linear-gradient(to bottom, #4B8C6E, lightslategrey)
+    }
+    article:hover, aside:hover {
+        transform: translateY(-5%) scale(1.020);
+    }
+}
+@media screen and (min-width: 1201px) {
+    body {
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .header-container {
+        padding-bottom: 20px;
+        border-bottom: 10px solid rgba(0, 0, 0, 0.37);
+        flex-flow: column nowrap;
+        text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.507);
+        box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.541);
+    }
+    .header-container h1 {
+        text-align: center;
+        font-size: 3.6rem;
+        border-bottom: none;
+    }
+    .header-container h2 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 2.4rem;}
+    .main-container {align-items: center;}
+    .section-container {
+        min-height: 500px;
+        flex-flow: row nowrap;
+        gap: 2em;
+    }
+    article, aside {
+        align-self: flex-start;
+        box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.507);
+        transition: transform 600ms ease;
+    }
+    article p, aside p {font-size: 1.420rem;}
+    article h2, aside h2 {
+        padding-left: 15px;
+        font-size: 1.850rem;
+        box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    }
+    article {flex: 2 1 700px;}
+    aside {
+        flex: 1 2 400px;
+        background-image: linear-gradient(to bottom, #4B8C6E, lightslategrey)
+    }
+    article:hover, aside:hover {
+        transform: translateY(-5%) scale(1.020);
+    }
 }
