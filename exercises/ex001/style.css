@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --c1: #8C675D;
+    --c2: #FF8564;
+}
+img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--c2);
+}
+header {margin: 20px;}
+header h1 {
+    color: whitesmoke;
+    font-size: 2.1rem;
+    text-align: center;
+    transition: font-size 500ms linear;
+}
+a {
+    display: block;
+    background-color: var(--c1);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    border-radius: 1em;
+    width: 100%;
+    font-weight: 600;
+    transition: transform 300ms linear, box-shadow 500ms linear;
+}
+p {
+    color: var(--c1);
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: font-weight 600ms linear;
+}
+.ContainerMain {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 950px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Image {
+    width: 90%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid var(--c1);
+}
+.Paragraph, .Button {
+    margin: 15px 0;
+}
+.Paragraph {
+    text-align: justify;
+    hyphens: auto;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    line-height: 27px;
+    width: 90%;
+}
+.Button {
+    width: 90%;
+}
+@media screen and (min-width: 600px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .ContainerMain {box-shadow: -4px 4px 2px 4px rgb(0, 0, 0);}
+    header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    p {
+        line-height: 33px;
+        font-size: 1.4rem;
+    }
+    a {font-size: 1.5rem;}
+    a:hover {transform: translateY(-10%) scale(1.040);}
+}
+@media screen and (min-width: 993px) {
+    .ContainerMain {
+        gap: 1.4em;
+        box-shadow: -4px 4px 2px 4px rgba(0, 0, 0, 0.600);
+    }
+    header h1 {
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+    }
+    p {
+        line-height: 33px;
+        letter-spacing: 2px;
+        font-size: 1.450rem;
+    }
+    a {font-size: 1.6rem;}
+    a:hover {
+        box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.800);
+        transform: translateY(-10%) scale(1.040);
+    }
+}
