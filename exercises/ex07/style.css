@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.FlexContainer {
+    width: 100%; min-height: 100vh;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+.GridContainer {
+    width: 100%; height: 90vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template: repeat(4, 100px) / 100px;
+    justify-content: center; align-content: center;
+    gap: 2em;
+}
+.GridItem {
+    text-align: center;
+    border: 2px solid red;
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {.GridContainer {grid-template-columns: repeat(2, 100px);}}
+@media screen and (min-width: 1201px) {.GridContainer {grid-template-columns: repeat(4, 100px);}}
