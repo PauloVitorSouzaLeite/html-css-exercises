@@ -9,8 +9,7 @@ body {
     justify-content: center; align-items: center;
 }
 .GridContainer {
-    width: 1000px; height: 500px;
-    max-width: 900px;
+    width: 600px; height: 500px;
     border: 3px solid darkred;
     display: grid;
     grid-template-rows: repeat(3, 100px);
