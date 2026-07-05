@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --c1: #3688FF;
+    --c2: #5C7BAA;
+    --c3: #4A4E54;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+.FlexContainer {
+    width: 100%; min-height: 100vh;
+    display: flex;
+    justify-content: center; align-items: start;
+    background-color: var(--c1);
+}
+.GridContainer {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    background-color: var(--c3);
+    display: grid;
+    grid-template-rows: 80px repeat(5,75px);
+    grid-template-columns: repeat(3, 80px) 90px;
+    gap: 15px;
+}
+.GridItem {
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: grey;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+.Box {
+    overflow: hidden;
+    width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+.One {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+.Two {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+.Three {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+.Four {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+.Five {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+.Six {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+}
+.Seven {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+}
+.Eight {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+}
+.Nine {
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+}
+.Zero {
+    grid-row: 6 / 7;
+    grid-column: 1 / 4;
+}
+.Box input {
+    text-align: end;
+    flex: 1 1 auto;
+    font-size: 1.9rem;
+    height: 95px;
+    padding: 5px 10px;
+}
+.Delete {grid-area: 2 / 1 / 3 / 2;}
+.Mais {grid-area: 2 / 3 / 3 / 4;}
+.Less {grid-area: 2 / 3 / 3 / 4;}
+.Multiplication {grid-area: 2 / 4 / 3 / -1;}
+.Division {grid-area: 3 / 4 / 4 / -1;}
+.Same {grid-area: 4 / 4 / 7 / -1;}
+.GridItem:hover {background-color: #333538;}
